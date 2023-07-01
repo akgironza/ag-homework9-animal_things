@@ -2,7 +2,7 @@
 
 require("dotenv").config(); //to be able to use dotenv package
 const express = require("express"); //importing the express lib
-const mogran = require("morgan"); //importing the morgan lib
+const morgan = require("morgan"); //importing the morgan lib
 const PORT = process.env.PORT; //getting the PORT from .env
 const app = express(); //express application object
 const methodOverride = require("method-override"); //importing method-override for PUTS and DELETES
