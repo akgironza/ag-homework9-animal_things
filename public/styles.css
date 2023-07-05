@@ -1,12 +1,19 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
 h1 {
-    background-color: brown;
-    color: white;
+    background-color: peachpuff;
+    color: black;
     padding: 5px;
+    text-align: center;
 }
 
 li {
     font-size: 1.1em;
     font-weight: 900;
+    list-style: none;
 }
 
 .green {
