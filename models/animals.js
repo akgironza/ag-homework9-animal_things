@@ -4,7 +4,7 @@
 const mongoose = require("./connection");
 
 // Setting variable that holds schema
-const animalSchema = mongoose.Schema({
+const animalSchema = new mongoose.Schema({
     species: String,
     extinct: Boolean, 
     location: String,

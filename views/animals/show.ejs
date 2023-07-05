@@ -11,9 +11,9 @@
   <body>
     <h1>name: <%= animal.species %></h1>
     <ul>
-      <li>location: <%= animal.location %></li>
-      <li>extinct: <%= animal.extinct %></li>
-      <li>life expectancy: <%= animal.lifeExpectancy %></li>
+        <li>extinct: <%= animal.extinct %></li>
+        <li>location: <%= animal.location %></li>
+        <li>life expectancy: <%= animal.lifeExpectancy %></li>
     </ul>
     <a href="/animal/<%= id %>/edit"><button>Edit</button></a>
     <form action="/animal/<%= id %>?_method=DELETE" method="post">

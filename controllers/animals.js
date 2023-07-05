@@ -1,5 +1,5 @@
 // Import dependencies
-const express = require("express");
+const express = require("express")
 const Animals = require("../models/animals");
 
 // Router
@@ -54,4 +54,4 @@ router.get("/:id", (req, res) => {
 
 
 // EXPORT ROUTER
-module.exports = router;
+module.exports = router

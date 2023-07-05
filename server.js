@@ -14,7 +14,7 @@ app.use(morgan("dev"));
 app.use(express.static("public")); //to treat public folder as static file server
 app.use(express.urlencoded({extended: false})); //for parsing urlencoded
 app.use(methodOverride("_method")); //to override method when it sees "?_method="
-app.use("animal", animalsRouter); //use the router for any url that starts with /animals
+app.use("/animal", animalsRouter); //use the router for any url that starts with /animals
 
 
 // LISTENER
