@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <%- include("../imports.ejs") %>
+</head>
+<body>
+    <h1>Animals App</h1>
+
+    <h2>Edit <%=animal.species%></h2>
+    <form action="/animal/<%= id %>?_method=PUT" method="post">
+        <input type="text" name="species" placeholder="species of animal" value="<%= animal.species %>"/>
+        <input type="text" name="location" placeholder="location of animal" value="<%= animal.location %>"/> 
+        <input type="checkbox" name="extinct" <%= animal.extinct ? "checked" : "" %>/>
+        <input type="text" name="life-expectancy" placeholder="life expectancy" value="<%= animal.lifeExpectancy %>"/> 
+        <input type="submit" value="Edit <%=animal.species%>"/>
+
+    </form>
+
+
+</body>
+</html>
